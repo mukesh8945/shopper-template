@@ -20,6 +20,7 @@ export default function ShoppingComponent() {
                 setProducts(data);
             });
     }
+
     // component initiliser
     useEffect(() => {
         LoadCategories();
@@ -50,10 +51,10 @@ export default function ShoppingComponent() {
                     </div>
 
                 </nav>
-                <main className="col-9 d-flex flex-wrap">
+                <main className="col-9 d-flex flex-wrap overflow-auto" style={{ height: '600px' }}>
                     {
                         products.map(product =>
-                            <div className="card m-2 p-2 w-25">
+                            <div key={product.id} className="card m-2 p-2 w-25">
                                 <img src={product.image} className="card-img-top" height="150" />
                                 <div className="card-header">
                                     <p>{product.title}</p>
