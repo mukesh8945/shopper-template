@@ -5,10 +5,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import reportWebVitals from './reportWebVitals';
 import EventBinding from './components/EventBinding';
+import ShoppingComponent from './components/ShoppingComponent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <EventBinding />
+    <ShoppingComponent />
   </React.StrictMode>
 );
 
