@@ -13,7 +13,7 @@ export default function TwoWayBinding() {
             Name: e.target.value,
             Price: product.Price,
             City: product.City,
-            Stcok: product.Stcok
+            Stcok: product.Stock
         })
     }
 
