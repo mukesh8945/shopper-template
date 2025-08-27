@@ -6,10 +6,11 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import reportWebVitals from './reportWebVitals';
 import EventBinding from './components/EventBinding';
 import ShoppingComponent from './components/ShoppingComponent';
+import TwoWayBinding from './components/TwoWayBinding';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ShoppingComponent />
+    <TwoWayBinding />
   </React.StrictMode>
 );
 
