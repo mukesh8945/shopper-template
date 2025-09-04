@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals';
 // import EventBinding from './components/EventBinding';
 import ShoppingComponent from './components/ShoppingComponent';
 import TwoWayClassDemo from './components/TwoWayClassDemo';
+import { FormComponent } from './components/FormComponent';
+import FormValid from './components/FormValid';
 // import TwoWayBinding from './components/TwoWayBinding';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TwoWayClassDemo />
+    <FormValid />
   </React.StrictMode>
 );
 
