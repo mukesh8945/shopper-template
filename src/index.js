@@ -4,16 +4,11 @@ import './index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import reportWebVitals from './reportWebVitals';
-// import EventBinding from './components/EventBinding';
-import ShoppingComponent from './components/ShoppingComponent';
-import TwoWayClassDemo from './components/TwoWayClassDemo';
-import { FormComponent } from './components/FormComponent';
-import FormValid from './components/FormValid';
-// import TwoWayBinding from './components/TwoWayBinding';
+import FormikDemo from './components/FormikDemo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormValid />
+    <FormikDemo />
   </React.StrictMode>
 );
 
