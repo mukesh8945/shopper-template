@@ -5,10 +5,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import reportWebVitals from './reportWebVitals';
 import FormikDemo from './components/FormikDemo';
+import FormikValidations from './components/FormikValidations';
+import YupValidation from './components/YupValidation';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormikDemo />
+    <YupValidation />
   </React.StrictMode>
 );
 

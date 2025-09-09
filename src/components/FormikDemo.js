@@ -4,10 +4,11 @@ export default function FormikDemo() {
         initialValues: {
             UserName: '',
             Password: '',
-            City: ''
+            City: '',
+            Subscribe: true
         },
         onSubmit: values => {
-            alert(JSON.stringify(values));
+            alert(`${values.UserName}\n${values.Password}\n${values.City}\n Subscription: ${(values.Subscribe == true) ? "SubScribe" : "UnSubScribe"}`);
         }
     })
     return (
@@ -26,13 +27,12 @@ export default function FormikDemo() {
                             <option>Bihar</option>
                         </select>
                     </dd>
+                    <dt>SubScribe</dt>
+                    <dd className="form-switch"><input className="form-check-input" type="checkbox" onChange={formik.handleChange} value={formik.values.Subscribe} /></dd>
                 </dl>
                 <button>Register</button>
+
             </form>
-            <h2>UserDetails</h2>
-            <p>{formik.values.UserName}</p>
-            <p>{formik.values.Password}</p>
-            <p>{formik.values.City}</p>
         </div>
     )
 }
