@@ -10,7 +10,7 @@ import YupValidation from './components/YupValidation';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <YupValidation />
+    <FormikValidations />
   </React.StrictMode>
 );
 
