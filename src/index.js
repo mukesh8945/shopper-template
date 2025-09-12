@@ -8,10 +8,11 @@ import FormikDemo from './components/FormikDemo';
 import FormikValidations from './components/FormikValidations';
 import YupValidation from './components/YupValidation';
 import YupvalidationComponent from './components/YupvalidationComponent';
+import LifecycleDemo from './components/LifecycleDemo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <YupvalidationComponent />
+    <LifecycleDemo />
   </React.StrictMode>
 );
 
