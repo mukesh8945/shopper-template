@@ -7,10 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import FormikDemo from './components/FormikDemo';
 import FormikValidations from './components/FormikValidations';
 import YupValidation from './components/YupValidation';
+import YupvalidationComponent from './components/YupvalidationComponent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormikValidations />
+    <YupvalidationComponent />
   </React.StrictMode>
 );
 
