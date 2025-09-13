@@ -85,17 +85,22 @@ export default class LifecycleDemo extends React.Component {
 
     render() {
         return (
-            <div className="containner-fluid">
-                <dl>
-                    <dt>User Name</dt>
-                    <dd><input onChange={this.handleUserName} type="text" /></dd>
-                    <dt>Password</dt>
-                    <dd><input onChange={this.handlePassword} type="password" /></dd>
-                </dl>
-                <button onClick={this.handleLoginClick} className="btn btn-success" type="submit">Login</button>
-                <div>
-                    {this.state.result}
-                </div>
+            <div className="container-fluid card shadow p-4 mb-4 mt-4" style={{ width: "22rem" }}>
+                <h3 className="card-title text-center mb-4 text-primary">Login</h3>
+                <form>
+                    <div className="mb-3">
+                        <dl>
+                            <dt>User Name</dt>
+                            <dd><input className="form-control" onChange={this.handleUserName} type="text" /></dd>
+                            <dt>Password</dt>
+                            <dd><input className="form-control" onChange={this.handlePassword} type="password" /></dd>
+                        </dl>
+                        <button onClick={this.handleLoginClick} className="btn btn-success form-control" type="submit">Login</button>
+                        <div>
+                            {this.state.result}
+                        </div>
+                    </div>
+                </form>
             </div>
         )
     }
