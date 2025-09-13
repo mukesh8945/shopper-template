@@ -23,6 +23,7 @@ class ErrorComponent extends React.Component {
     componentWillUnmount() {
         alert('Error component unmount');
     }
+
     render() {
         return (
             <div className="container-fluid">
@@ -71,7 +72,7 @@ export default class LifecycleDemo extends React.Component {
     }
 
     handleLoginClick() {
-        if (this.state.formDetails.UserName == this.state.userDetails.UserName && this.state.formDetails.Password == this.state.userDetails.Password) {
+        if (this.state.formDetails.UserName === this.state.userDetails.UserName && this.state.formDetails.Password === this.state.userDetails.Password) {
             this.setState({
                 result: <SuccessComponent />
             })
