@@ -10,10 +10,11 @@ import YupValidation from './components/YupValidation';
 import YupvalidationComponent from './components/YupvalidationComponent';
 import LifecycleDemo from './components/LifecycleDemo';
 import ReactHookDemo from './components/ReactHookDemo';
+import ReactHookContext from './components/ReactHookContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ReactHookDemo />
+    <ReactHookContext />
   </React.StrictMode>
 );
 
