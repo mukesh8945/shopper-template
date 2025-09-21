@@ -10,6 +10,16 @@ export default function ReactHookContext() {
         <userDetailsContext.Provider value={userdetails}>
             <div className="container-fluid">
                 <h2>Site Index - {userdetails.UserName}</h2>
+                <dl className="form-control w-25 ">
+                    <dt>User Name</dt>
+                    <dd><input className="form-control" type="text" name="username" /></dd>
+                    <dt>Email</dt>
+                    <dd><input className="form-control " type="email" name="email" /></dd>
+                    <div>
+                        <button className=" form-control btn btn-success">Register</button>
+                    </div>
+                </dl>
+
                 <HeaderComponent />
             </div>
         </userDetailsContext.Provider >
