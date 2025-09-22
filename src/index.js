@@ -11,10 +11,14 @@ import YupvalidationComponent from './components/YupvalidationComponent';
 import LifecycleDemo from './components/LifecycleDemo';
 import ReactHookDemo from './components/ReactHookDemo';
 import ReactHookContext from './components/ReactHookContext';
+import { CookiesProvider } from 'react-cookie';
+import UserLogin from './components/UserLogin';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ReactHookContext />
+    <CookiesProvider>
+      <UserLogin />
+    </CookiesProvider>
   </React.StrictMode>
 );
 
