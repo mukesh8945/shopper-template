@@ -20,12 +20,13 @@ export default function UserLogin() {
     }
 
     function handleLogin() {
-        setCookie("username", userDetails.UserName, { path: "/", expires: new Date("September 22, 2025") });
+        const expiry = new Date("2025-09-22T00:00:00");
+        setCookie("username", userDetails.UserName, { path: "/", expires: expiry });
         alert("Login Success...");
     }
 
     function handleSignout() {
-        removeCookie('username');
+        removeCookie('username', { path: "/" });
         alert('Signed out success fully.....');
     }
 
@@ -35,9 +36,9 @@ export default function UserLogin() {
             <h2>User Login</h2>
             <dl>
                 <dt>User Name</dt>
-                <dd><input onChange={handleUserName} type="text" /></dd>
+                <dd><input onChange={handleUserName} value={userDetails.UserName} type="text" /></dd>
                 <dt>Password</dt>
-                <dd><input onChange={handlePassword} type="text" /></dd>
+                <dd><input onChange={handlePassword} value={userDetails.Password} type="password" /></dd>
             </dl>
             <button onClick={handleLogin}>Login</button>
             <hr />
