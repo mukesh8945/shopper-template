@@ -42,7 +42,7 @@ export default function UserLogin() {
             </dl>
             <button onClick={handleLogin}>Login</button>
             <hr />
-            <h3>Home <button onClick={handleSignout} className="btn btn-warning">Signout</button></h3>
+            <h3>Home <button onClick={handleSignout} className="btn btn-danger">Signout</button></h3>
             Hello !{cookies.username}
         </div>
     )
