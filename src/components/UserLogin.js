@@ -9,14 +9,14 @@ export default function UserLogin() {
         setUserDetails({
             UserName: e.target.value,
             Password: userDetails.Password
-        })
+        });
     }
 
     function handlePassword(e) {
         setUserDetails({
             UserName: userDetails.UserName,
             Password: e.target.value
-        })
+        });
     }
 
     function handleLogin() {
@@ -30,6 +30,11 @@ export default function UserLogin() {
         alert('Signed out success fully.....');
     }
 
+    useEffect(() => {
+        if (cookies.username == undefined) {
+            alert('Please Login');
+        }
+    });
 
     return (
         <div className="container-fluid">
