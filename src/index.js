@@ -13,12 +13,11 @@ import ReactHookDemo from './components/ReactHookDemo';
 import ReactHookContext from './components/ReactHookContext';
 import { CookiesProvider } from 'react-cookie';
 import UserLogin from './components/UserLogin';
+import ReducerDemo from './components/ReducerDemo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CookiesProvider>
-      <UserLogin />
-    </CookiesProvider>
+    <ReducerDemo />
   </React.StrictMode>
 );
 
