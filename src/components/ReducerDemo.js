@@ -4,9 +4,19 @@ var initialState = { likes: 0, dislikes: 0 };
 function reducer(state, action) {
     switch (action.type) {
         case "like":
-            return { likes: parseInt(state.likes + 1), dislikes: state.dislikes };
+            return {
+                likes: state.likes + 1,
+                dislikes: state.dislikes > 0 ? state.dislikes - 1 : state.dislikes
+            };
+
         case "dislike":
-            return { dislikes: parseInt(state.dislikes + 1), likes: state.likes };
+            return {
+                likes: state.likes > 0 ? state.likes - 1 : state.likes,
+                dislikes: state.dislikes + 1
+            };
+
+        default:
+            return state;
     }
 }
 
