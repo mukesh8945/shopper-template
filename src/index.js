@@ -14,10 +14,22 @@ import ReactHookContext from './components/ReactHookContext';
 import { CookiesProvider } from 'react-cookie';
 import UserLogin from './components/UserLogin';
 import ReducerDemo from './components/ReducerDemo';
+<<<<<<< HEAD
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ReducerDemo />
+=======
+import CustomHooks from './components/CustomHooks';
+import JQueryAjax from './components/JQueryAjax';
+import ShoppingIndex from './shopping/ShoppingIndex';
+import SPARoute from './components/SPARoute';
+import Index from './i-shop/Index';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Index />
+>>>>>>> 2cb70de (new data)
   </React.StrictMode>
 );
 
